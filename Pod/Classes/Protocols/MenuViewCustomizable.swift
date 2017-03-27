@@ -21,6 +21,7 @@ public protocol MenuViewCustomizable {
     var menuPosition: MenuPosition { get }
     var dividerImage: UIImage? { get }
     var itemsOptions: [MenuItemViewCustomizable] { get }
+    var topConstraint: Int { get }
 }
 
 public extension MenuViewCustomizable {
@@ -56,6 +57,9 @@ public extension MenuViewCustomizable {
     }
     var dividerImage: UIImage? {
         return nil
+    }
+    var topConstraint: Int {
+        return 0
     }
 }
 

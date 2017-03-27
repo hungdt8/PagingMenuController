@@ -254,7 +254,7 @@ open class PagingMenuController: UIViewController, PagingValidator {
         case .all(let menuOptions, _):
             switch menuOptions.menuPosition {
             case .top:
-                verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[menuView][pagingView]|", options: [], metrics: nil, views: viewsDictionary)
+                verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[pagingView]|", options: [], metrics: nil, views: viewsDictionary)
             case .bottom:
                 verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[pagingView][menuView]", options: [], metrics: nil, views: viewsDictionary)
             }
